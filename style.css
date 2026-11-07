@@ -408,26 +408,18 @@ footer img {
 .bg-animation {
   background-color: var(--content-color);
   border-radius: 2.8rem;
-  animation: scale 500ms forwards ease, rotation 650ms ease 700ms,
-    backTransparent 650ms ease 2s forwards, diminuteScale 500ms ease 2s forwards;
+  animation: scale 500ms forwards ease,
+    rotation 650ms ease 700ms,
+    backTransparent 650ms ease 3s forwards,   /* era 2s */
+    diminuteScale 500ms ease 3s forwards;     /* era 2s */
 }
 
 .text-animation {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.3rem;
-  width: 8.7rem;
-  height: 8.7rem;
-  color: black;
-  font-size: 4.6rem;
-  font-weight: bold;
-  font-family: var(--ff-paragraph);
-  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  /* ...mantenha o resto igual... */
   animation: text-focus-in 2.1s cubic-bezier(1, 0.085, 0.68, 0.53) both,
-    noRotation 700ms ease 700ms, colorInverse 100ms linear 900ms forwards,
-    colorReturn 100ms linear 2s forwards;
+    noRotation 700ms ease 700ms,
+    colorInverse 100ms linear 900ms forwards,
+    colorReturn 100ms linear 3s forwards;     /* era 2s */
 }
 
 .appear-button {
